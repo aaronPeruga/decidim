@@ -26,6 +26,7 @@ en:
         new: New %{name}
         preview: Preview
         title: Actions
+        edit_projects: Manage projects
       admin:
         budgets:
           create:
@@ -106,6 +107,7 @@ en:
           fields:
             name: Name
             total_budget: Total budget
+            projects_count: Projects count
         project:
           fields:
             title: Title

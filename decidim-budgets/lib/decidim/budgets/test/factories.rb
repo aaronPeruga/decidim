@@ -86,8 +86,8 @@ FactoryBot.define do
   factory :project, class: "Decidim::Budgets::Project" do
     title { generate_localized_title }
     description { Decidim::Faker::Localized.wrapped("<p>", "</p>") { generate_localized_title } }
-    budget { Faker::Number.number(8) }
-    component { create(:budgets_component) }
+    budget_amount { Faker::Number.number(8) }
+    budget { create(:budget) }
   end
 
   factory :order, class: "Decidim::Budgets::Order" do
